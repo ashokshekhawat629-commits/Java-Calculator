@@ -1,0 +1,24 @@
+//To print ID card details
+
+public class IDCard {
+    public static void main(String[] args) {
+        
+        // storing details in variables
+        String name = "Ashok Singh";
+        int sapid = 590012;
+        int batch = 27;
+        String collegeName = "UPES";
+        String course = "CSE";
+        String year = "2024-2028";
+        
+        // printing details like an ID card
+        System.out.println("********** Student ID Card **********");
+        System.out.println("Name        : " + name);
+        System.out.println("SAP ID      : " + sapid);
+        System.out.println("Batch       : " + batch);
+        System.out.println("College     : " + collegeName);
+        System.out.println("Course      : " + course);
+        System.out.println("Year        : " + year);
+        System.out.println("*************************************");
+    }
+}
