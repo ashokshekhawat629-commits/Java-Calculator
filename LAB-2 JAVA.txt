@@ -1,0 +1,46 @@
+
+// To check if I can go for a movie or not
+// Now taking input from user
+
+import java.util.Scanner;
+
+public class MovieDecision {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        // taking inputs from user
+        System.out.print("Enter the temperature in °C: ");
+        int temperature = sc.nextInt();
+        sc.nextLine(); // consume newline left by nextInt
+        
+        System.out.print("Enter the movie genre: ");
+        String genre = sc.nextLine();
+        
+        System.out.print("Is your partner ready? (true/false): ");
+        boolean partnerReady = sc.nextBoolean();
+        sc.nextLine(); // consume newline left by nextBoolean
+        
+        System.out.print("Enter the director name: ");
+        String director = sc.nextLine();
+        
+        // checking conditions one by one
+        if (temperature > 25) {
+            System.out.println("Yes, I can go for the movie because temperature is fine.");
+        } 
+        else if (genre.equalsIgnoreCase("thriller")) {
+            System.out.println("Yes, I can go for the movie because genre is thriller.");
+        } 
+        else if (partnerReady) {
+            System.out.println("Yes, I can go for the movie because my partner is ready.");
+        } 
+        else if (director.equalsIgnoreCase("Nolan")) {
+            System.out.println("Yes, I can go for the movie because director is Nolan.");
+        } 
+        else {
+            System.out.println("No, I can not go for the movie.");
+        }
+        
+        sc.close();
+    }
+}
