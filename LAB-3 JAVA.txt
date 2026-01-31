@@ -1,0 +1,37 @@
+class Student{
+    int id;
+    String name;
+    int age;
+	 Student(){
+	this(22, "Ashok Singh", 19);
+        
+	System.out.println("Inside 0 args constructor");
+    }
+    Student(int i){
+        id=i;
+        name="NULL";
+        age=0;
+    }
+    Student(int i,String n) {
+        this(20);
+System.out.println("Inside 2 args constructor");
+    }
+    Student(int i,String n,int a) {
+        
+System.out.println("Inside 3 args constructor");
+
+    }
+
+    void display() {
+        System.out.println("ID:"+id+", Name: "+name +", Age: "+age);
+    }
+    public static void main(String[] args){
+        Student s1=new Student();                
+      /*  Student s2=new Student(102, "kamu");       
+        Student s3=new Student(103, "punit", 20);    
+        s1.display();
+        s2.display();
+        s3.display();
+*/
+    }
+}
